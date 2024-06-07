@@ -1,12 +1,12 @@
 // Analiza pliku JSON
-// const pies = {
-//     imie: "Azor", // parametr imie zapisany jako tekst (string)
-//     wiek: 8, //parament wiek  zapisanym jako liczba (number)
-//     czySzczeka: true,
-//     szczeka() {
-//         console.log("hauhau");
-//     }
-// }
+const pies = {
+    imie: "Azor", // parametr imie zapisany jako tekst (string)
+    wiek: 8, //parament wiek  zapisanym jako liczba (number)
+    czySzczeka: true,
+    szczeka() {
+        console.log("hauhau");
+    }
+}
 
 // Analiza Metody JSON.parse()
 const json = '{"name":"Mango","age":3,"isHappy":true}';

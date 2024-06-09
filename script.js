@@ -1,7 +1,7 @@
 // Analiza pliku JSON
 const pies = {
     imie: "Azor", // parametr imie zapisany jako tekst (string)
-    wiek: 8, //parament wiek  zapisanym jako liczba (number)
+    wiek: 8, //parametr wiek  zapisanym jako liczba (number)
     czySzczeka: true,
     szczeka() {
         console.log("hauhau");
@@ -17,6 +17,12 @@ console.log(obj);
 console.log(JSON.parse(json))
 
 
+
+
+
+
+let dane = '{"Jakis, dziwny format json"}';
+
 // Obsługa błędów
 try {
     // kod który powinien się wykonać bez błędów
@@ -28,18 +34,12 @@ try {
     console.log(error.message);
 }
 
-let dane
-let zewnetrznySerwis = '{"Jakis, dziwny format json"}';
-
-try {
-//     // kod ktory powinien sie wykonac bez bledow
-    dane = JSON.parse(zewnetrznySerwis);
-
 } catch (error) {
-    // wylapywanie bledow
-    console.error(error);
-    dane = '{"imie":"","wiek":,"czySzczeka":}'
-}
+    // wyłapywanie błędów
+    console.log("Name" + error.name);
+    console.log("Message" + error.message);
 
+    dane = { imie: "", wiek: 0, czySzczeka: false };
+}
 
 // console.log(dane);

@@ -19,20 +19,12 @@ console.log(JSON.parse(json))
 
 
 
-
-
 let dane = '{"Jakis, dziwny format json"}';
 
 // Obsługa błędów
 try {
     // kod który powinien się wykonać bez błędów
     const dane = JSON.parse("Jakis, dziwny format json");
-
-} catch (error) {
-    // wyłapywanie błędów
-    console.log(error.name);
-    console.log(error.message);
-}
 
 } catch (error) {
     // wyłapywanie błędów
